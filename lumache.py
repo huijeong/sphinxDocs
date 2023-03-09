@@ -24,6 +24,10 @@ class InvalidKindError(Exception):
 
     pass
 
+class UnexsistKindError(Exception):
+    """Raised if the kind is Unexsist."""
+
+    pass
 
 def select_menu(kind=None):
     """
@@ -31,7 +35,7 @@ def select_menu(kind=None):
 
     :param kind: Optional "organic" of menu.
     :type kind: str or None
-    :raise lumache.InvalidKindError: If the organic is soldout.
+    :raise lumache.UnexsistKindError: If the kind is unexsist.
     :return: The menu name.
     :rtype: str
     """
