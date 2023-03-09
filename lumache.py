@@ -1,14 +1,18 @@
 """
-Lumache - Python library for cooks and food lovers.
+Lumache - Python library for cooks and food lover doggy.
 
 This is a Python docstring, we can use reStructuredText syntax here!
+I'm lumache.py file. append the api in this file.
 
 .. code-block:: python
 
     # Import lumache
     import lumache
 
-    # Call its only function
+    # Call the function to choose the menu
+    select_menu(kind="organic")
+
+    # Call next function to cook
     get_random_ingredients(kind=["cheeses"])
 """
 
@@ -19,6 +23,19 @@ class InvalidKindError(Exception):
     """Raised if the kind is invalid."""
 
     pass
+
+
+def select_menu(kind=None):
+    """
+    Return the random menu as a string.
+
+    :param kind: Optional "organic" of menu.
+    :type kind: str or None
+    :raise lumache.InvalidKindError: If the organic is soldout.
+    :return: The menu name.
+    :rtype: str
+    """
+    return "puppuccino"
 
 
 def get_random_ingredients(kind=None):
@@ -32,3 +49,4 @@ def get_random_ingredients(kind=None):
     :rtype: list[str]
     """
     return ["shells", "gorgonzola", "parsley"]
+
