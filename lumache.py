@@ -2,7 +2,6 @@
 Lumache - Python library for cooks and food lover doggy.
 
 This is a Python docstring, we can use reStructuredText syntax here!
-I'm lumache.py file. append the api in this file.
 
 .. code-block:: python
 
@@ -28,6 +27,7 @@ class UnexsistKindError(Exception):
     """Raised if the kind is Unexsist."""
 
     pass
+
 
 def select_menu(kind=None):
     """

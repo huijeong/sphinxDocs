@@ -9,6 +9,10 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
+# path 수정은 사용자의 빌드 환경에 따라 다른데, 필자는 build와 source 디렉터리를 분리해서 사용하기 때문에 
+# source 디렉터리 기준으로 부모(docs)의 부모(최상위) 디렉터리를 지정하여 사용한다.
+# 만약 이후의 빌드 과정에서 모듈을 찾지 못한다는 에러가 발생하면 path 지정이 제대로 되지 않아서이다.
+# sys.path.insert(0, os.path.abspath('../..'))   # 필자의 path
 #
 # import os
 # import sys
