@@ -23,20 +23,20 @@ class InvalidKindError(Exception):
 
     pass
 
-class UnexsistKindError(Exception):
-    """Raised if the arg1 is unexsist."""
+class UnexsistTypeError(Exception):
+    """Raised if the parameter is not Integer."""
 
     pass
 
 
 def select_menu(arg1:int, arg2:int):
     """
-    Return the random menu as a int.
+    Return the random menu as a index number.
 
     :param arg1: first select number.
     :param arg2: second select number.
-    :raise lumache.UnexsistKindError: If the arg1 is unexsist.
-    :return: The final menu number.
+    :raise lumache.UnexsistTypeError: If the parameter is not Integer.
+    :return: The final menu's index number.
     :rtype: int
 
     :example:
@@ -46,7 +46,7 @@ def select_menu(arg1:int, arg2:int):
         3
 
     """
-    return a + b
+    return arg1 + arg2
 
 
 def get_random_ingredients(kind=None):

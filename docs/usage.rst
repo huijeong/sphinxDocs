@@ -34,17 +34,18 @@ just select by use ``lumache.select_menu`` function:
 
 .. autofunction:: lumache.select_menu
 
-The ``organic`` parameter should be either ``"puppuccino"``, ``"chewstick"``,
-or ``"jelly"``. Otherwise, :py:func:`lumache.select_menu`
-will raise an exception
+you have to select 2 random Integer then we sum that 2 numbers. 
+and we recommand to you a randomly nice dinner menu! it will returned by menu's index number.
+The ``arg1`` and ``arg2`` parameter should be choose by exsist number.
+Otherwise, :py:func:`lumache.select_menu` will raise an exception.
 
-.. autoexception:: lumache.UnexsistKindError
+.. autoexception:: lumache.UnexsistTypeError
 
 For example:
 
 >>> import lumache
->>> lumache.select_menu()
-'puppuccino'
+>>> lumache.select_menu(1, 2)
+    3
 
 
 next step is create the recipies for this menu.
