@@ -29,7 +29,26 @@ class UnexsistKindError(Exception):
     pass
 
 
-def select_menu(kind=None):
+def sum(arg1:int, arg2:int) -> int:
+    """
+    This is example sum function.
+
+    :param int arg1: Description here.
+    :param int arg2: Description here.
+    :return: description of return value.
+    :rtype: int
+
+    :example: 
+    >>> a=3
+    >>> b=5
+    >>> sum(a, b)
+        8
+    """
+
+    return a + b
+
+
+def select_menu(kind=none):
     """
     Return the random menu as a string.
 
