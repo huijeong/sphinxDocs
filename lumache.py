@@ -24,36 +24,29 @@ class InvalidKindError(Exception):
     pass
 
 class UnexsistKindError(Exception):
-    """Raised if the kind is Unexsist."""
+    """Raised if the arg1 is unexsist."""
 
     pass
 
 
-def sum(arg1:int, arg2:int):
+def select_menu(arg1:int, arg2:int):
     """
-    This is example sum function.
+    Return the random menu as a int.
 
-    :param int arg1: Description here.
-    :param int arg2: Description here.
-    :return: description of return value.
+    :param arg1: first select number.
+    :param arg2: second select number.
+    :raise lumache.UnexsistKindError: If the arg1 is unexsist.
+    :return: The final menu number.
     :rtype: int
 
+    :example:
+    >>> a=1
+    >>> b=2
+    >>> select_menu(a, b)
+        3
+
     """
-
-    return arg1 + arg2
-
-
-def select_menu(kind=none):
-    """
-    Return the random menu as a string.
-
-    :param kind: Optional "organic" of menu.
-    :type kind: str or None
-    :raise lumache.UnexsistKindError: If the kind is unexsist.
-    :return: The menu name.
-    :rtype: str
-    """
-    return "puppuccino"
+    return a + b
 
 
 def get_random_ingredients(kind=None):
