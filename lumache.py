@@ -29,7 +29,7 @@ class UnexsistKindError(Exception):
     pass
 
 
-def sum(arg1:int, arg2:int) -> int:
+def sum(arg1:int, arg2:int):
     """
     This is example sum function.
 
@@ -38,14 +38,9 @@ def sum(arg1:int, arg2:int) -> int:
     :return: description of return value.
     :rtype: int
 
-    :example: 
-    >>> a=3
-    >>> b=5
-    >>> sum(a, b)
-        8
     """
 
-    return a + b
+    return arg1 + arg2
 
 
 def select_menu(kind=none):
