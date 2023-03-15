@@ -67,3 +67,14 @@ For example:
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
 
+
+sizeup
+----------
+
+this is just test api for docstring.
+use the ``size_up()``:
+
+.. autofunction:: sizeup.size_up
+
+select the food that you want to size up first, and choose the size.
+there is large, xlarge, 2xlarge you can choose! 
