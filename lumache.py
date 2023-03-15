@@ -9,7 +9,7 @@ This is a Python docstring, we can use reStructuredText syntax here!
     import lumache
 
     # Call the function to choose the menu
-    select_menu(kind="organic")
+    select_menu(arg1, arg2)
 
     # Call next function to cook
     get_random_ingredients(kind=["cheeses"])
@@ -40,9 +40,9 @@ def select_menu(arg1:int, arg2:int):
     :rtype: int
 
     :example:
-    >>> a=1
-    >>> b=2
-    >>> select_menu(a, b)
+    >>> arg1=1
+    >>> arg2=2
+    >>> select_menu(arg1, arg2)
         3
 
     """

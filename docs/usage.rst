@@ -19,7 +19,7 @@ If you want to get the menu list for your wonderful dinner,
 run this command line:
 
 .. code-block:: console
-   $ hodu get-menu-list
+   (.venv) $ hodu get-menu-list
 
 
 
@@ -41,14 +41,10 @@ Otherwise, :py:func:`lumache.select_menu` will raise an exception.
 
 .. autoexception:: lumache.UnexsistTypeError
 
-For example:
-
->>> import lumache
->>> lumache.select_menu(1, 2)
-    3
 
 
 next step is create the recipies for this menu.
+
 
 
 Creating recipes
