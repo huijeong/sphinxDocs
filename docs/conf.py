@@ -29,6 +29,10 @@ author = "Development part core team"
 # -- General configuration ---------------------------------------------------
 # -- General configuration
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
 extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
@@ -36,6 +40,7 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
 ]
+autosummary_generate = True
 
 intersphinx_mapping = {
     "rtd": ("https://docs.readthedocs.io/en/stable/", None),

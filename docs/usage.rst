@@ -19,6 +19,7 @@ If you want to get the menu list for your wonderful dinner,
 run this command line:
 
 .. code-block:: console
+   
    (.venv) $ hodu get-menu-list
 
 
