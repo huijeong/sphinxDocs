@@ -13,6 +13,10 @@ This is a Python docstring, we can use reStructuredText syntax here!
 
 __version__ = "0.1.0"
 
+class InvalidKindError(Exception):
+    """Raised if the kind is invalid."""
+
+    pass
 
 
 def size_up(food:str, size:str):
@@ -21,6 +25,7 @@ def size_up(food:str, size:str):
 
     :param str food: return a random food name as string.
     :param str size: choose the size between large, xlarge, 2xlarge.
+    :raise lumache.InvalidKindError: If the param is invalid.
     :return: return food name and that size.
     :rtype: str
 
