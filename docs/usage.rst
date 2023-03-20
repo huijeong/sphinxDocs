@@ -19,7 +19,7 @@ If you want to get the menu list for your wonderful dinner,
 run this command line:
 
 .. code-block:: console
-   
+
    (.venv) $ hodu get-menu-list
 
 
@@ -70,12 +70,12 @@ For example:
 
 
 sizeup
-----------
+--------
 
 this is just test api for docstring.
 use the ``size_up()``:
 
-.. autofunction:: sizeup.size_up
+.. autofunction:: sizeup.size_up(arg1, arg2)
 
 select the food that you want to size up first, and choose the size.
-there is large, xlarge, 2xlarge you can choose! 
+there is large, xlarge, 2xlarge can choose!

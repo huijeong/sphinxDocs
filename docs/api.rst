@@ -2,8 +2,8 @@ API
 ===
 
 .. autosummary::
-   :toctree: generated
+   :toctree: sizeup
 
-   sizeup
    lumache
+   sizeup
    
